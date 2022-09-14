@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 13vh;
+    background-color: #1d4caf;
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+.subheader{
+    padding-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    background-color: #006eff;
+    color: aliceblue;
+}
+
+.caixa{
+    font-size: 30px;
+}
+
+tr,td,th, table, tbody, thead{
+    border: 1px solid black;
+}
+
+.tabelas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.primeira{
+    padding-left: 5vh;
+    height: 55vh;
+    overflow-y: scroll;
+}
+
+.segunda{
+    padding-right: 5vh;
+    height: 55vh;
+    overflow-y: scroll;
+}

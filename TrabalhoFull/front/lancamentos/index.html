@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onLoad="carregar(), filtrarDatas()">
+    <header>
+        <p class="caixa">LIVRO CAIXA</p>
+    </header>
+    <div class="subheader">
+        <div>
+            <label for="">Filtro: </label>
+            <input type="date" id="filtrarData" onChange="filtrarDatas(this.value)">
+        </div>
+        <div>
+            <label for="">Novo Lançamento: </label>
+            <input id="inpDescricao" type="text" placeholder="Descrição">
+            <input id="inpValor" type="number" placeholder="Valor">
+            <input id="inpTipo" type="text" placeholder="Tipo">
+            <button onClick="cadastrarLancamentos()">mandarrrrrrrrrr</button>
+        </div>
+    </div>
+    </br>
+    <hr>
+    <div class="tabelas">
+        <div class="primeira">
+            <table>
+                <thead>
+                    <label for="">Débitos</label>
+                    <tr>
+                        <th>N-LANCAMENTO</th>
+                        <th>DATA</th>
+                        <th>DESCRIÇÃO</th>
+                        <th>VALOR</th>
+                        <th>TIPO</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-lancamentos">
+                    <tr class="linhamodelo model">
+                        <td id="nmrLancamento"></td>
+                        <td id="data"></td>
+                        <td id="descricao"></td>
+                        <td id="valor"></td>
+                        <td id="tipo"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="segunda">
+            <table>
+                <thead>
+                    <label for="">Créditos</label>
+                    <tr>
+                        <th>N-LANCAMENTO</th>
+                        <th>DATA</th>
+                        <th>DESCRIÇÃO</th>
+                        <th>VALOR</th>
+                        <th>TIPO</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-lancamentosC">
+                    <tr class="linhamodeloC model">
+                        <td id="nmrLancamentoC"></td>
+                        <td id="dataC"></td>
+                        <td id="descricaoC"></td>
+                        <td id="valorC"></td>
+                        <td id="tipoC"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="lista-soma">
+        <div class="linhamodeloCalc model">
+            <p class="total">TOTAL EM CAIXA:</p>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
