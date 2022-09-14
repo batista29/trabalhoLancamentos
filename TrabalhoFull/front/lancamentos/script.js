@@ -124,7 +124,7 @@ function filtrarDatas(e) {
 
                     } else {
                         document.querySelector("#lista-lancamentosC").appendChild(linha)
-                        // soma = soma += parseFloat(lancamento.valor);
+                        
                     }
 
                 }
